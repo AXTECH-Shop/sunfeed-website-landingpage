@@ -2,6 +2,7 @@
 
 import React from "react";
 import CountUp from "react-countup";
+import Image from "next/image";
 
 const ClientCounter = () => {
   const stats = [
@@ -13,14 +14,16 @@ const ClientCounter = () => {
   ];  
 
   return (
-    <div className="relative bg-[#36689E] overflow-hidden">
+    <div className="relative bg-[#36689E] overflow-hidden h-[600px]">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#36689E] to-[#36689E]/80 mix-blend-multiply" />
-        <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80"
+        <div className="absolute inset-0 bg-gradient-to-r from-[#36689E] to-[#36689E]/80 mix-blend-multiply z-10" />
+        <Image
+          src="/Images/solar1.png"
           alt="Solar Panels"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 

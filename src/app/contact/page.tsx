@@ -2,21 +2,24 @@
 
 import ContactForm from "@/components/ContactForm";
 import { Battery, Zap, Sun } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
     <>
     <div>
-    <div className="relative bg-[#36689E] overflow-hidden">
+    <div className="relative bg-[#36689E] overflow-hidden h-[500px]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#36689E] to-[#36689E]/80 mix-blend-multiply" />
-          <img
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80"
+          <div className="absolute inset-0 bg-gradient-to-r from-[#36689E] to-[#36689E]/80 mix-blend-multiply z-10" />
+          <Image
+            src="/Images/solar1.png"
             alt="Solar Panels"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
-        <div className="relative">
+        <div className="relative z-20">
           <div className="container mx-auto px-4 py-24">
             <div className="max-w-3xl">
               <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
@@ -72,6 +75,5 @@ export default function ContactPage() {
       </div>
     </div>
     </>
-
   );
 }

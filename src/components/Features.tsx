@@ -1,4 +1,3 @@
-import { Shield, Zap, Boxes, Leaf } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { JSX } from 'react';

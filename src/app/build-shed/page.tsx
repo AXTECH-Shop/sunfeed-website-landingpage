@@ -20,17 +20,17 @@ export default function page() {
       icon: <Zap className="w-6 h-6 text-primary" />,
       title: "Réduction des coûts énergétiques",
       description:
-        "L’autoconsommation collective permet de produire et consommer de manière optimale.",
+        "L&apos;autoconsommation collective permet de produire et consommer de manière optimale.",
     },
     {
       icon: <Shield className="w-6 h-6 text-primary" />,
-      title: "Optimisation et rentabilité de l’énergie produite",
-      description: "Maximisation de l'utilisation de l'énergie produite localement.",
+      title: "Optimisation et rentabilité de l&apos;énergie produite",
+      description: "Maximisation de l&apos;utilisation de l&apos;énergie produite localement.",
     },
     {
       icon: <Boxes className="w-6 h-6 text-primary" />,
       title: "Flexibilité et modularité",
-      description: "Ce modèle renforce les liens communautaires en favorisant l'autoconsommation.",
+      description: "Ce modèle renforce les liens communautaires en favorisant l&apos;autoconsommation.",
     },
     {
       icon: <Leaf className="w-6 h-6 text-primary" />,
@@ -45,21 +45,21 @@ export default function page() {
         title="Je construis mon hangar en autoconsommation collective"
         backgroundImage="/Images/batterybg.png"
         thumbnails={thumbnails}
-        subText="FAITES FINANCER VOTRE PROJET PAR L'ÉNERGIE SOLAIRE"
+        subText="FAITES FINANCER VOTRE PROJET PAR L&apos;ÉNERGIE SOLAIRE"
         highlightText="mon"
       />
 
       <Feature
         features={features}
-        heading="La solution d’autoconsommation collective"
-        subText="Économisez de l'argent et réduisez votre empreinte carbone"
+        heading="La solution d&apos;autoconsommation collective"
+        subText="Économisez de l&apos;argent et réduisez votre empreinte carbone"
         buttonText="CONTACTEZ-NOUS"
       />
 
       <div className="my-10 flex justify-center">
         <Image
           src="/Images/Ai.png"
-          alt="Exemple d'image"
+          alt="Exemple d&apos;image"
           width={800}
           height={500}
         />
@@ -73,14 +73,14 @@ export default function page() {
             </h1>
             <p className="text-base text-gray-600 mb-6 text-center">
               RÉALISEZ VOTRE HANGAR PHOTOVOLTAÏQUE AVEC SUNFEED <br />
-              TRANSFORMEZ L'ÉNERGIE SOLAIRE EN OPPORTUNITÉ FINANCIÈRE
+              TRANSFORMEZ L&apos;ÉNERGIE SOLAIRE EN OPPORTUNITÉ FINANCIÈRE
             </p>
 
             <p className="text-gray-700 mb-8">
               Une batterie de stockage joue un rôle essentiel dans un système
-              d'énergie solaire, qu'il s'agisse d'autoconsommation individuelle
-              ou collective. Voici les principales fonctions et avantages d'une
-              batterie solaire :
+              d&apos;énergie solaire, qu&apos;il s&apos;agisse d&apos;autoconsommation individuelle
+              ou collective. Voici les principales fonctions et avantages d&apos;une
+              batterie solaire :
             </p>
 
             <div className="space-y-8">
@@ -90,18 +90,18 @@ export default function page() {
                     1
                   </span>
                   <h2 className="font-semibold text-xl text-gray-900">
-                    Stockage de l'énergie excédentaire
+                    Stockage de l&apos;énergie excédentaire
                   </h2>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : Pendant la journée, les panneaux solaires
-                    produisent souvent plus d'énergie que ce qui est
+                    Principe : Pendant la journée, les panneaux solaires
+                    produisent souvent plus d&apos;énergie que ce qui est
                     immédiatement consommé. La batterie permet de stocker cet
-                    excédent au lieu de l'injecter dans le réseau.
+                    excédent au lieu de l&apos;injecter dans le réseau.
                   </li>
                   <li>
-                    Avantage : Maximisation de l'utilisation de l'énergie
+                    Avantage : Maximisation de l&apos;utilisation de l&apos;énergie
                     produite localement, réduisant ainsi la dépendance au
                     réseau public.
                   </li>
@@ -119,13 +119,13 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : L'énergie stockée est utilisée lorsque les
+                    Principe : L&apos;énergie stockée est utilisée lorsque les
                     panneaux solaires ne produisent pas, notamment la nuit ou
                     par temps nuageux.
                   </li>
                   <li>
-                    Avantage : Assure un approvisionnement continu en énergie
-                    renouvelable, augmentant l'autonomie énergétique.
+                    Avantage : Assure un approvisionnement continu en énergie
+                    renouvelable, augmentant l&apos;autonomie énergétique.
                   </li>
                 </ul>
               </div>
@@ -141,13 +141,13 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : En stockant et en consommant l'énergie solaire,
-                    les utilisateurs évitent d'acheter de l'électricité à des
+                    Principe : En stockant et en consommant l&apos;énergie solaire,
+                    les utilisateurs évitent d&apos;acheter de l&apos;électricité à des
                     tarifs souvent plus élevés pendant les périodes de pointe.
                   </li>
                   <li>
-                    Avantage : Optimisation des économies sur les factures
-                    d'énergie.
+                    Avantage : Optimisation des économies sur les factures
+                    d&apos;énergie.
                   </li>
                 </ul>
               </div>
@@ -158,17 +158,17 @@ export default function page() {
                     4
                   </span>
                   <h2 className="font-semibold text-xl text-gray-900">
-                    Sécurisation de l'approvisionnement électrique
+                    Sécurisation de l&apos;approvisionnement électrique
                   </h2>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : Certaines batteries, en particulier dans les
+                    Principe : Certaines batteries, en particulier dans les
                     systèmes hybrides, peuvent fournir une alimentation de
                     secours en cas de panne du réseau.
                   </li>
                   <li>
-                    Avantage : Garantie de continuité énergétique pour les
+                    Avantage : Garantie de continuité énergétique pour les
                     appareils essentiels.
                   </li>
                 </ul>
@@ -185,12 +185,12 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : En permettant une consommation différée d'énergie
+                    Principe : En permettant une consommation différée d&apos;énergie
                     renouvelable, les batteries aident à équilibrer production
-                    et demande, même en l'absence de soleil.
+                    et demande, même en l&apos;absence de soleil.
                   </li>
                   <li>
-                    Avantage : Réduction de la pression sur le réseau et
+                    Avantage : Réduction de la pression sur le réseau et
                     participation à une gestion énergétique plus durable.
                   </li>
                 </ul>

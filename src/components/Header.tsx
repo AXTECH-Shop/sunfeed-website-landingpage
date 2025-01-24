@@ -5,13 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronDown, Menu } from 'lucide-react';
 import MobileMenu from '@/components/MobileMenu';
-import Button from './common/Button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-
 
   return (
     <nav className="relative flex items-center justify-between px-4 md:px-8 py-2">
@@ -35,43 +32,42 @@ const Header = () => {
           Home
         </Link>
         {/* Nos offres with dropdown */}
-
-<div 
-  className="relative group"
-  onMouseEnter={() => setIsDropdownOpen(true)}
-  onMouseLeave={() => setIsDropdownOpen(false)}
->
-  <button className="flex items-center text-gray-800 hover:text-blue-600">
-    Nos offres
-    <ChevronDown 
-      className={`w-4 h-4 ml-1 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} 
-    />
-  </button>
-  
-  {/* Dropdown Menu */}
-  <div 
-    className={`absolute left-0 z-20 w-48 mt-2 bg-white rounded-md shadow-lg transition-all duration-200 ${
-      isDropdownOpen 
-        ? 'opacity-100 translate-y-0 visible' 
-        : 'opacity-0 -translate-y-2 invisible'
-    }`}
-  >
-    <div className="py-2">
-      <Link 
-        href="/build-shed"
-        className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
-      >
-        I build my shed
-      </Link>
-      <Link 
-        href="/rent-roof"
-        className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
-      >
-        I rent my roof
-      </Link>
-    </div>
-  </div>
-</div>
+        <div 
+          className="relative group"
+          onMouseEnter={() => setIsDropdownOpen(true)}
+          onMouseLeave={() => setIsDropdownOpen(false)}
+        >
+          <button className="flex items-center text-gray-800 hover:text-blue-600">
+            Nos offres
+            <ChevronDown 
+              className={`w-4 h-4 ml-1 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} 
+            />
+          </button>
+          
+          {/* Dropdown Menu */}
+          <div 
+            className={`absolute left-0 z-20 w-48 mt-2 bg-white rounded-md shadow-lg transition-all duration-200 ${
+              isDropdownOpen 
+                ? 'opacity-100 translate-y-0 visible' 
+                : 'opacity-0 -translate-y-2 invisible'
+            }`}
+          >
+            <div className="py-2">
+              <Link 
+                href="/build-shed"
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                I build my shed
+              </Link>
+              <Link 
+                href="/rent-roof"
+                className="block px-4 py-2 text-gray-800 hover:bg-blue-50 hover:text-blue-600"
+              >
+                I rent my roof
+              </Link>
+            </div>
+          </div>
+        </div>
 
         <Link href="/battery" className="text-gray-800 hover:text-blue-600">
           Batterie
@@ -83,7 +79,6 @@ const Header = () => {
       
       {/* Desktop Contact Button and Phone */}
       <div className="hidden md:flex items-center space-x-6">
-        {/* <Button text='Contactez-nous'  /> */}
         <button className="px-6 py-2 text-white bg-primary rounded-md hover:bg-blue-950 transition-colors">
           Contactez-nous
         </button>

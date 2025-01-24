@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-              SUNFEED, Expert En Solutions Solaires, Accompagne Entreprises Et Propriétaires Dans La Valorisation De Leurs Toitures Ou Terrains. En Tant Que Porteur De Projets, Nous Prenons En Charge L'étude, Le Financement, L'installation Et La Gestion De Centrales Photovoltaïques Pour Des Solutions Durables Et Rentables.
+              SUNFEED, Expert En Solutions Solaires, Accompagne Entreprises Et Propriétaires Dans La Valorisation De Leurs Toitures Ou Terrains. En Tant Que Porteur De Projets, Nous Prenons En Charge L&apos;étude, Le Financement, L&apos;installation Et La Gestion De Centrales Photovoltaïques Pour Des Solutions Durables Et Rentables.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-gray-600 hover:text-gray-900">
@@ -72,4 +72,3 @@ export default function Footer() {
     </footer>
   )
 }
-

@@ -30,7 +30,7 @@ export default function page() {
     {
       icon: <Leaf className="w-6 h-6 text-primary" />,
       title: "Engagement environnemental",
-      description: "Maximise l'utilisation de l'énergie renouvelable.",
+      description: "Maximise l&apos;utilisation de l&apos;énergie renouvelable.",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function page() {
       <Feature
         features={features}
         heading="Stockez votre énergie avec des batteries"
-        subText="Économisez de l'argent et réduisez votre empreinte carbone"
+        subText="Économisez de l&apos;argent et réduisez votre empreinte carbone"
         buttonText="CONTACTEZ-NOUS"
       />
 
@@ -58,14 +58,14 @@ export default function page() {
               Quel est le rôle de la batterie ?
             </h1>
             <p className="text-base text-gray-600 mb-6 text-center">
-              SYSTÈMES DE STOCKAGE D'ÉNERGIE ET LEUR IMPORTANCE
+              SYSTÈMES DE STOCKAGE D&apos;ÉNERGIE ET LEUR IMPORTANCE
             </p>
 
             <p className="text-gray-700 mb-8">
               Une batterie de stockage joue un rôle essentiel dans un système
-              d'énergie solaire, qu'il soit destiné à l'autoconsommation
+              d&apos;énergie solaire, qu&apos;il soit destiné à l&apos;autoconsommation
               individuelle ou collective. Voici les principales fonctions et
-              avantages d'une batterie solaire :
+              avantages d&apos;une batterie solaire :
             </p>
 
             <div className="space-y-8">
@@ -75,18 +75,18 @@ export default function page() {
                     1
                   </span>
                   <h2 className="font-semibold text-xl text-gray-900">
-                    Stockage de l'excédent d'énergie
+                    Stockage de l&apos;excédent d&apos;énergie
                   </h2>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
                     Principe : Pendant la journée, les panneaux solaires
-                    produisent souvent plus d'énergie que ce qui est
+                    produisent souvent plus d&apos;énergie que ce qui est
                     immédiatement consommé. La batterie permet de stocker cet
-                    excédent au lieu de l'injecter dans le réseau.
+                    excédent au lieu de l&apos;injecter dans le réseau.
                   </li>
                   <li>
-                    Avantage : Maximisation de l'utilisation de l'énergie
+                    Avantage : Maximisation de l&apos;utilisation de l&apos;énergie
                     produite localement, réduisant ainsi la dépendance au réseau
                     public.
                   </li>
@@ -104,13 +104,13 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : L'énergie stockée est utilisée lorsque les
+                    Principe : L&apos;énergie stockée est utilisée lorsque les
                     panneaux solaires ne produisent pas, notamment la nuit ou
                     par temps nuageux.
                   </li>
                   <li>
                     Avantage : Assure un approvisionnement continu en énergie
-                    renouvelable, augmentant l'autonomie énergétique.
+                    renouvelable, augmentant l&apos;autonomie énergétique.
                   </li>
                 </ul>
               </div>
@@ -126,11 +126,11 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Principe : En stockant et en consommant de l'énergie solaire,
-                    les utilisateurs évitent d'acheter de l'électricité souvent
+                    Principe : En stockant et en consommant de l&apos;énergie solaire,
+                    les utilisateurs évitent d&apos;acheter de l&apos;électricité souvent
                     plus chère pendant les périodes de pointe.
                   </li>
-                  <li>Avantage : Optimisation des économies sur les factures d'énergie.</li>
+                  <li>Avantage : Optimisation des économies sur les factures d&apos;énergie.</li>
                 </ul>
               </div>
 
@@ -140,17 +140,17 @@ export default function page() {
                     4
                   </span>
                   <h2 className="font-semibold text-xl text-gray-900">
-                    Sécurisation de l'approvisionnement électrique
+                    Sécurisation de l&apos;approvisionnement électrique
                   </h2>
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
                     Principe : Certaines batteries, notamment dans les systèmes
-                    hybrides, peuvent fournir de l'énergie de secours en cas de
+                    hybrides, peuvent fournir de l&apos;énergie de secours en cas de
                     panne de réseau.
                   </li>
                   <li>
-                    Avantage : Assure la continuité de l'énergie pour les
+                    Avantage : Assure la continuité de l&apos;énergie pour les
                     appareils essentiels.
                   </li>
                 </ul>
@@ -168,8 +168,8 @@ export default function page() {
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
                     Principe : En permettant la consommation différée de
-                    l'énergie renouvelable, les batteries aident à équilibrer la
-                    production et la demande, même en l'absence de soleil.
+                    l&apos;énergie renouvelable, les batteries aident à équilibrer la
+                    production et la demande, même en l&apos;absence de soleil.
                   </li>
                   <li>
                     Avantage : Réduction de la pression sur le réseau et
@@ -185,11 +185,11 @@ export default function page() {
               Quel financement pour la batterie ?
             </h2>
             <p className="text-base text-gray-600 mb-6 text-center">
-              SOLUTIONS FINANCIÈRES POUR LE STOCKAGE D'ÉNERGIE
+              SOLUTIONS FINANCIÈRES POUR LE STOCKAGE D&apos;ÉNERGIE
             </p>
 
             <p className="text-gray-700 mb-8">
-              Mettre en place un projet d'autoconsommation collective nécessite
+              Mettre en place un projet d&apos;autoconsommation collective nécessite
               un investissement initial. Cependant, de nombreuses solutions de
               financement existent pour soutenir les particuliers, les entreprises
               et les collectivités dans cette transition énergétique. Voici les
@@ -208,11 +208,11 @@ export default function page() {
                 </div>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
-                    Pour les acteurs ayant la capacité d'autofinancer, le
+                    Pour les acteurs ayant la capacité d&apos;autofinancer, le
                     financement par fonds propres reste une solution intéressante.
                   </li>
                   <li>
-                    Avantages : Pas de frais d'intérêt ni d'engagement envers un
+                    Avantages : Pas de frais d&apos;intérêt ni d&apos;engagement envers un
                     tiers.
                   </li>
                   <li>
@@ -234,8 +234,8 @@ export default function page() {
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
                     Les prêts bancaires traditionnels ou les prêts spécifiques
-                    pour la transition énergétique permettent d'étaler le coût
-                    d'installation sur plusieurs années.
+                    pour la transition énergétique permettent d&apos;étaler le coût
+                    d&apos;installation sur plusieurs années.
                   </li>
                   <li>
                     Points forts : Taux souvent attractifs grâce aux dispositifs
@@ -260,8 +260,8 @@ export default function page() {
                 <ul className="list-disc list-inside text-gray-700 space-y-2 pl-11">
                   <li>
                     Dans ce modèle, une entreprise tierce finance et installe
-                    l'équipement. Vous payez un loyer pour l'utilisation des
-                    panneaux, avec une option d'achat à terme.
+                    l&apos;équipement. Vous payez un loyer pour l&apos;utilisation des
+                    panneaux, avec une option d&apos;achat à terme.
                   </li>
                   <li>
                     Avantages : Pas de frais initiaux, ce qui réduit le risque

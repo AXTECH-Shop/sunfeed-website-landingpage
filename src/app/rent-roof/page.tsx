@@ -21,12 +21,12 @@ export default function page() {
       icon: <Zap className="w-6 h-6 text-primary" />,
       title: "Réduction des coûts énergétiques",
       description:
-        "L’autoconsommation collective permet de produire et consommer ",
+        "L&apos;autoconsommation collective permet de produire et consommer ",
     },
     {
       icon: <Shield className="w-6 h-6 text-primary" />,
-      title: "Optimisation et rentabilité de l’énergie produite ",
-      description: "L’autoconsommation collective permet de maximiser.",
+      title: "Optimisation et rentabilité de l&apos;énergie produite ",
+      description: "L&apos;autoconsommation collective permet de maximiser.",
     },
     {
       icon: <Boxes className="w-6 h-6 text-primary" />,
@@ -47,13 +47,13 @@ export default function page() {
         title="Je loue ma toiture en Autoconsommation collective"
         backgroundImage="/Images/batterybg.png"
         thumbnails={thumbnails}
-        subText="GÉNÉREZ DU REVENUE PAR L'ÉNERGIE SOLAIRE"
+        subText="GÉNÉREZ DU REVENUE PAR L&apos;ÉNERGIE SOLAIRE"
         highlightText="toiture"
       />
 
       <Feature
         features={features}
-        heading="La solution d’autoconsommation collective"
+        heading="La solution d&apos;autoconsommation collective"
         subText="Save Money and Reduce Your Carbon Footprint"
         buttonText="CONTACTEZ-NOUS"
       />
@@ -74,8 +74,7 @@ export default function page() {
               Quel foncier pour la création de batiment ?
             </h1>
             <p className="text-base text-gray-600 mb-6 text-center">
-            RÉALISEZ VOTRE HANGAR PHOTOVOLTAÏQUE AVEC SUNFEED <br />TRANSFORMEZ L'ÉNERGIE SOLAIRE EN OPPORTUNITÉ FINANCIÈRE
-
+            RÉALISEZ VOTRE HANGAR PHOTOVOLTAÏQUE AVEC SUNFEED <br />TRANSFORMEZ L&apos;ÉNERGIE SOLAIRE EN OPPORTUNITÉ FINANCIÈRE
             </p>
 
             <p className="text-gray-700 mb-8">

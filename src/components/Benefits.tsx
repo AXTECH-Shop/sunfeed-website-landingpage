@@ -10,7 +10,7 @@ export default function Benefits() {
       </div>
 
       <h2 className="text-[43px] font-bold text-center mb-16">
-        Les Bénéfices D'une Centrale Solaire
+        Les Bénéfices D&apos;une Centrale Solaire
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -53,7 +53,7 @@ export default function Benefits() {
             Réduction des factures
           </h3>
           <p className="text-gray-600 leading-relaxed">
-            L'énergie solaire permet de produire sa propre électricité,
+            L&apos;énergie solaire permet de produire sa propre électricité,
             diminuant significativement les coûts liés à la consommation sur le
             réseau.
           </p>
@@ -98,7 +98,7 @@ export default function Benefits() {
             Rentabilité sur le long terme
           </h3>
           <p className="text-gray-600 leading-relaxed">
-            Bien que l'investissement initial soit important, les économies
+            Bien que l&apos;investissement initial soit important, les économies
             réalisées permettent un retour sur investissement en 7 à 15 ans,
             avec des gains sur plusieurs décennies.
           </p>
@@ -138,8 +138,8 @@ export default function Benefits() {
             Valorisation du patrimoine
           </h3>
           <p className="text-gray-600 leading-relaxed">
-            L'installation de panneaux solaires augmente la valeur d'un bien
-            immobilier, grâce à des économies d'énergie et un attrait
+            L&apos;installation de panneaux solaires augmente la valeur d&apos;un bien
+            immobilier, grâce à des économies d&apos;énergie et un attrait
             écologique.
           </p>
         </div>

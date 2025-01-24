@@ -1,112 +1,9 @@
-// import React from 'react';
-// import { Star } from 'lucide-react';
-
-// // TestimonialCard Component
-// interface TestimonialCardProps {
-//   name: string;
-//   title: string;
-//   image: string;
-//   review: string;
-// }
-
-// const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, title, image, review }) => {
-//   return (
-//     <div className="flex flex-col overflow-hidden shadow-xl bg-white rounded-lg">
-//       <div className="flex flex-col justify-between flex-1 p-6 lg:py-8 lg:px-7">
-//         <div className="flex-1">
-//           <div className="flex items-center space-x-1">
-//             {/* Use Star from @lucide/react */}
-//             <Star className="w-5 h-5 text-[#FDB241]" />
-//             <Star className="w-5 h-5 text-[#FDB241]" />
-//             <Star className="w-5 h-5 text-[#FDB241]" />
-//             <Star className="w-5 h-5 text-[#FDB241]" />
-//             <Star className="w-5 h-5 text-[#FDB241]" />
-//           </div>
-
-//           <blockquote className="flex-1 mt-8">
-//             <p className="text-lg leading-relaxed text-gray-900">{review}</p>
-//           </blockquote>
-//         </div>
-
-//         <div className="flex items-center mt-8">
-//           <img className="flex-shrink-0 object-cover rounded-full w-12 h-12" src={image} alt={name} />
-//           <div className="ml-4">
-//             <p className="text-base font-bold text-gray-900">{name}</p>
-//             <p className="mt-0.5 text-sm text-gray-600">{title}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// // Main Testimonial Component
-// export default function Testimonial() {
-//   const testimonials = [
-//     {
-//       name: 'Leslie Alexander',
-//       title: 'Freelance React Developer',
-//       image: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png',
-//       review: '“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”'
-//     },
-//     {
-//       name: 'John Doe',
-//       title: 'Senior Software Engineer',
-//       image: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png',
-//       review: '“The platform made my workflow so much easier. I saved a lot of time on routine tasks and was able to focus on more important features.”'
-//     },
-//     {
-//       name: 'Jane Smith',
-//       title: 'UI/UX Designer',
-//       image: '/images/Sunfeed.png',
-//       review: '“This is the best design tool I’ve ever used. It helped me to craft beautiful interfaces with ease, and the performance is stellar.”'
-//     }
-//   ];
-
-//   return (
-//     <section className="py-12 bg-white sm:py-16 lg:py-20 px-6 lg:px-12"> {/* Added padding to left and right */}
-//       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"></div>
-
-//       <div className="flex flex-col items-center">
-//         <div className="text-center">
-//           <p className="text-2xl font-bold text-primary">Our Testimonials</p>
-//           <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">What Our Customers Says</h2>
-//         </div>
-
-//         <div className="relative mt-10 md:mt-24 md:order-2">
-//           <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
-//             <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-60 blur-lg filter" style={{ background: 'linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)' }}></div>
-//           </div>
-
-//           <div className="relative grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-//             {testimonials.map((testimonial, index) => (
-//               <TestimonialCard
-//                 key={index}
-//                 name={testimonial.name}
-//                 title={testimonial.title}
-//                 image={testimonial.image}
-//                 review={testimonial.review}
-//               />
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-
-
-
-
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 type Testimonial = {
   quote: string;
@@ -129,9 +26,9 @@ export const AnimatedTestimonials = ({
     setRotations(testimonials.map(() => Math.floor(Math.random() * 21) - 10));
   }, [testimonials]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
-  };
+  }, [testimonials.length]);
 
   const handlePrev = () => {
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
@@ -144,11 +41,11 @@ export const AnimatedTestimonials = ({
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, handleNext]);
 
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-      <div className="text-center mb-12"> {/* Added bottom margin */}
+      <div className="text-center mb-12">
         <p className="text-2xl font-bold text-primary">TÉMOIGNAGE</p>
         <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
           Ce que les clients pensent de nous :
