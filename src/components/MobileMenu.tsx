@@ -31,14 +31,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           <div className="w-full h-px bg-gray-200" />
           
           <Link 
-            href="/our-offer/build-shed" 
+            href="/build-shed" 
             className="block text-center text-gray-700 hover:text-gray-900 py-2 text-lg"
             onClick={onClose}
           >
             I build my shed
           </Link>
           <Link 
-            href="/our-offer/rent-roof" 
+            href="/rent-roof" 
             className="block text-center text-gray-700 hover:text-gray-900 py-2 text-lg"
             onClick={onClose}
           >

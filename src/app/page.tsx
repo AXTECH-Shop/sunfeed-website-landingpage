@@ -29,15 +29,6 @@ export default function Home() {
       <Benefits />
       <WhyChooseUs />
 
-      {/* Centered Image
-      <div className="w-full flex justify-center">
-        <img
-          src="/Images/count.png"
-          alt="Counter"
-          className="max-w-full h-auto"
-        />
-      </div> */}
-
       <ClientCounter />
 
       <ConstructionSteps />

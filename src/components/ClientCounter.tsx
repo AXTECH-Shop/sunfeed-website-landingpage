@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import CountUp from "react-countup";
@@ -6,35 +6,34 @@ import Image from "next/image";
 
 const ClientCounter = () => {
   const stats = [
-    { value: 2008, label: "Création de voltaïca", isCounting: false },
+    { value: 2008, label: "Création de voltaïca", isCounting: true },
     { value: 650, label: "Centrales (développées ou en cours de développement)", isCounting: true, prefix: "+" },
     { value: 23, label: "D'euros de ca en 2025", isCounting: true, prefix: "+", suffix: "M" },
     { value: 150, label: "Collaborateurs", isCounting: true, prefix: "+" },
     { value: 7, label: "Au classement des champions de la croissance 2024", isCounting: false, suffix: "ème" },
-  ];  
+  ];
 
   return (
-    <div className="relative bg-[#36689E] overflow-hidden h-[600px]">
-      {/* Background */}
+    <div className="relative bg-[#36689E] overflow-hidden py-16 sm:py-20">
+      {/* Background Image with Reduced Visibility */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#36689E] to-[#36689E]/80 mix-blend-multiply z-10" />
         <Image
-          src="/Images/solar1.png"
+          src="/Images/countingimg.jpg"
           alt="Solar Panels"
           fill
-          className="object-cover"
+          objectFit="cover"
+          className="opacity-40" // Reduce visibility
           priority
         />
+        <div className="absolute inset-0 bg-[#36689E]/80 mix-blend-multiply" />
       </div>
 
-      {/* Top Left Text */}
-      <div className="relative z-20">
-        <h2 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide px-6 pt-6">
-          EN QUELQUES CHIFFRES...
-        </h2>
-      </div>
+      {/* Title */}
+      <h2 className="relative z-10 text-white text-lg sm:text-2xl lg:text-3xl font-bold uppercase tracking-wide text-center">
+        EN QUELQUES CHIFFRES...
+      </h2>
 
-      {/* Content */}
+      {/* Stats Section */}
       <div className="relative z-10 max-w-7xl mx-auto py-20 px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-white text-center">
           {stats.map((stat, index) => (

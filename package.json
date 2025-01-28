@@ -47,6 +47,7 @@
     "embla-carousel-react": "^8.5.2",
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.18.1",
+    "gsap": "^3.12.7",
     "input-otp": "^1.4.2",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.471.1",

@@ -72,10 +72,10 @@ export default function OurAchievements() {
   }, [emblaApi]);
 
   return (
-    <main className="min-h-screen bg-gray-100 pt-10 pb-12">
+    <main className="min-h-full bg-gray-100 pt-10 pb-12">
       <div className="max-w-[95%] mx-auto">
         <div className="flex justify-between items-center mb-12">
-          <h1 className="text-4xl font-bold text-[#1B365D]">
+          <h1 className="text-3xl  font-bold text-[#1B365D]">
             NOS RÉALISATIONS
           </h1>
           <div className="flex gap-4">
@@ -99,9 +99,9 @@ export default function OurAchievements() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="flex-[0_0_100%] sm:flex-[0_0_45%] md:flex-[0_0_30%] group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex-[0_0_100%] sm:flex-[0_0_45%] md:flex-[0_0_30%] group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-60 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}

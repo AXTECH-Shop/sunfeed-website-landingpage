@@ -1,15 +1,15 @@
-import React from 'react';
-import Image from 'next/image';
-import { SquareCheckBig } from 'lucide-react';
+import React from "react";
+import Image from "next/image";
+import { SquareCheckBig } from "lucide-react";
 
 function WhyChooseUs() {
   const features = [
-    'Experienced',
-    'Affordable',
-    'Reliable',
-    'Customizable',
-    'Sustainable',
-    'Trustworthy',
+    "Experienced",
+    "Affordable",
+    "Reliable",
+    "Customizable",
+    "Sustainable",
+    "Trustworthy",
   ];
 
   return (
@@ -24,15 +24,17 @@ function WhyChooseUs() {
           <div className="w-full md:w-1/2">
             <div
               className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] overflow-hidden"
-              style={{ borderTopRightRadius: '5rem', borderBottomLeftRadius: '5rem' }}
+              style={{
+                borderTopRightRadius: "5rem",
+                borderBottomLeftRadius: "5rem",
+              }}
             >
               <Image
                 src="/Images/hero-image.png"
                 alt="House with solar panels"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
+                fill
                 priority
+                style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
           </div>
@@ -40,7 +42,7 @@ function WhyChooseUs() {
           {/* Right Side - Content */}
           <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-4">
             <h2 className="text-primary text-2xl sm:text-3xl font-semibold mb-3">
-            Pourquoi nous choisir ? 
+              Pourquoi nous choisir ?
             </h2>
             <p className="text-gray-600 text-sm sm:text-base mb-6">
               Creating quality urban lifestyles, building stronger communities.
